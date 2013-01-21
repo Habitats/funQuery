@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="iso-8859-1">
+        <link rel="stylesheet" href="stylesheet.css" />
+        <link rel="stylesheet"
+        href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+        <title>Just like the best page ever</title>
+    </head>
+    <div id="info">
+        <p><b>Status logger </p>
+        </b>
+    </div>
+    <div id="widthSlider"></div>
+    <div id="configToggle">
+        <button></button>
+    </div>
+    <!-- <div id="config">
+    <form>
+    <span>W</span>
+    <input type="text"  />
+    </form>
+    <br/>
+    </div> -->
+    <div id="main">
+        <div id="contentWrapper">
+            <div id="header">
+                <span class="link">header yo</span>
+            </div>
+            <br class="clear" />
+            <div id="menu">
+                <ul>
+                    <li>home</li>
+                    <li>boxes</li>
+                    <li>random</li>
+                    <li>youtube</li>
+                </ul>
+            </div>
+
+            <!-- hacky workaround to "fill" the parent div -->
+            <br class="clear" />
+
+            <div id="mainContent">
+                <div id="boxes" class="mainContent">
+                    <div class="subMenu">
+                        <ul>
+                            <li id="addContentButton">Add more stuff!</li>
+                            <li id="clearBoxes">clear</li>
+                            <li id="blueBoxes">blue</li>
+                            <li id="xBoxes">x</li>
+                        </ul>
+                    </div>
+                    <br class="clear" />
+                    <div class="contentRow"></div>
+                    <!-- workaround to clear the divs with #main -->
+                    <br class="clear" />
+                </div>
+                <div id="random" class="mainContent">
+                    <h1>Awwwwww</h1>
+                    <img alt="cutie"
+                    src="http://wallpaperscraft.com/image/golden_retriever_puppy_cute_dog_muzzle_16591_1600x1200.jpg" />
+                </div>
+                <div id="youtube" class="mainContent">
+                    <h1>YOUTUBE SEARCH</h1>
+                    <form id="utubSearch">
+                        <div>
+                            <input name="searchField" type="text" value="hobo" /><input
+                            id="searchButton" type="submit" value="search!" />
+                        </div>
+                        <div>
+                            <span>colums:</span>
+                            <select id="resultColums">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option selected>5</option>
+                            </select>
+                        </div>
+                        <div>
+                            <span>sort by:</span>
+                            <select id="order">
+                                <option value="viewcount" selected>views</option>
+                                <option value="relevance">relevance</option>
+                                <option value="rating">rating</option>
+                                <option value="date">date</option>
+                            </select>
+                        </div>
+                        <div>
+                            <span>quality:</span>
+                            <select id="videoDefinition">
+                                <option value="any">any</option>
+                                <option value="high" selected>hd</option>
+                                <option value="standard">sd</option>
+                            </select>
+                        </div>
+                        <div>
+                            <span>results:</span><input id="maxResults" type="text"
+                            value="10" maxlength="3" size="1" />
+                        </div>
+                    </form>
+                    <div class="jsonData"></div>
+                    <div id="utubMoreButton">
+                        more
+                    </div>
+                </div>
+                <div id="home" class="mainContent">
+                    <h1>Welcome</h1>
+                    <p class="bread">Click on stuff! (...using Chrome)</p>
+                </div>
+            </div>
+            <div id="footer">
+                <a href="/funQuery/">THE BEST PAGE EVER</a>
+            </div>
+        </div>
+    </div>
+    <script src="jQuery.js"></script>
+    <script src="script.js"></script>
+    <script src="youTube.js"></script>
+    <script src="auth.js"></script>
+    <script src="imageLoaded.js"></script>
+    <script src="boxes.js"></script>
+    <script
+    src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script src="https://apis.google.com/js/client.js"></script>
+</html>

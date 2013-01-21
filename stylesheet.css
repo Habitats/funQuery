@@ -1,0 +1,312 @@
+* {
+	/*border: 1px dashed white;*/
+
+}
+div {
+	margin: auto;
+}
+
+body {
+	background-color: #4EBAFF;
+	margin: auto;
+}
+
+ul > li {
+	cursor: hand;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+h1{
+	margin:5px 0 10px 0;
+	padding:0;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+}
+
+pre {
+	margin:0;
+	padding:0 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+img{
+	border:none;
+}
+
+#main {
+	margin: 20px auto 0 auto;
+	background-color: #AAD450;
+	padding: 0px;
+	width: 50%;
+	font-family: Courier;
+	text-align: center;
+	display: none;
+}
+
+#contentWrapper {
+	width: 95%;
+	width: 600px;
+	position:relative;
+}
+.mainContent {
+	padding: 20px 0 0 0;
+	display: none;
+}
+
+#header {
+	height: 60px;
+	padding-top:15px;
+	background-color: #FBCA54;
+	font-size: 45px;
+	font-weight:bold;
+}
+
+/*replicate link behavior on custom elements*/
+.link {
+	cursor: hand;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/*menu*/
+
+#menu {
+}
+#menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	/*can't center elements if width is undefined'*/
+	width: 100%;
+	float: left;
+	background-color: #4EBAFF;
+	height: 100%;
+	text-align: left;
+	display: block;
+	color:white;
+}
+
+#menu ul li {
+	/*display: inline-block;*/
+	background-color: #FF8A3C;
+	padding: 5px 0;
+	margin: 0;
+	/*width:100px;*/
+	display: inline-block;
+	text-align: center;
+	/*removes unwanted space between elements that're "block in-ine"*/
+	float: left;
+}
+
+/*submenu*/
+#subMenu {
+	width: 100%;
+	left:0;
+	position:absolute;
+}
+
+#subMenu ul {
+	list-style: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+.subMenu ul li {
+	display: inline-block;
+	float: left;
+	background-color: #F6402D;
+	color: white;
+	margin-right: 10px;
+	padding: 0 5px;
+}
+
+/*content*/
+.clear {
+	clear: both;
+}
+
+#random {
+	overflow: hidden;
+}
+
+#random img {
+	max-width: 100%;
+}
+
+/*boxes*/
+.contentRow {
+	margin: 20px auto;
+	clear: both;
+}
+.content {
+	/*see script.js for dimensions*/
+	height: 50px;
+	/*width: 250px;*/
+	background-color: #F6402D;
+	font-size: 30px;
+	font-weight: bolder;
+	color: white;
+	border-radius: 50px;
+	opacity: 0.75;
+	float: left;
+	text-align: center;
+	margin: 5px 0;
+	display: inline-block;
+}
+
+.content p {
+	padding: 0;
+	margin: 8px 0;
+}
+
+/*youtube*/
+
+.jsonData{
+	margin-top:20px;
+	clear:both;
+	display:block;
+}
+
+.resultBatch{
+	display:none;
+}
+
+#utubSearch {
+	text-align:left;
+}
+
+#utubSearch div{
+	display:inline-block;
+}
+
+#utubSearch div:first-child{
+	display:block;
+}
+
+#utubSearch input[name="searchField"]{
+	width:70%;
+}
+                            
+#utubSearchButton {
+	display:block;
+	clear:both;
+} 
+
+#utubMoreButton{
+	background-color:#F6402D;
+	opacity:0;
+	display:inline-block;
+	color:white;
+	clear:both;
+	width:100%;
+}
+.utubVidBox {
+	display: inline-block;
+	float: left;
+	background-color: #F6402D;
+	color:white;
+	text-align: left;
+	font-size: 12px;
+	width: 190px;
+	margin: 0 10px 10px 0;
+	position: relative;
+}
+
+.utubVidBox .title {
+	text-overflow:ellipsis;
+	overflow: hidden;
+	height: 20px;
+	padding: 0 5px;
+	margin:5px 0;
+	white-space: nowrap;
+}
+
+.utubVidBox .thumbnail {
+	position: relative;
+	overflow: hidden;
+	background-color:black;
+}
+
+.utubVidBox .thumbnail img {
+	position: absolute;
+}
+
+/*configurator*/
+#widthSlider{
+	position:fixed;
+	z-index:10;
+	width:100px;
+	height:10px;
+	right:50px;
+	top:50px;
+}
+
+#configToggle{
+	position:fixed;
+	z-index:10;
+	width:20px;
+	height:20px;
+	right:50px;
+	top:80px;
+}
+
+/*logger*/
+#info {
+	font-size: 12px;
+	text-align: left;
+	background-color: #C0C0C0;
+	position: fixed !important;
+	width: auto;
+	top: 50px;
+	left: 50px;
+	border: solid 2px black;
+	max-height: 500px;
+	overflow: auto;
+	resize: both;
+	display: none;
+	z-index: 2;
+}
+
+#info p {
+	margin: 0px 5px;
+	padding: 0;
+	display: block;
+}
+
+/*footer*/
+#footer {
+	height: 20px;
+	background-color: #FF8A3C;
+	color: white;
+	margin: 10px auto 0 auto;
+	clear: both;
+	display:inline-block;
+	width:100%;
+}
+
+#footer a {
+	text-decoration: none;
+	color: white;
+}
+#footer a:visited {
+	color: white;
+}
+#footer a:hover {
+	color: black;
+}
